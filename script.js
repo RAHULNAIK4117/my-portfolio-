@@ -13,7 +13,7 @@ toggleButton.addEventListener('click', () => {
 
 // im an developer and introduction secton
 var typed = new Typed(".text", {
-  strings: ["Web Developer", "designer", "Computer Programmer"],
+  strings: ["UI/UX Designer","Web Developer","Programmer","Photographer","Video Editor",],
   typeSpeed: 100,
   backSpeed: 100, // Corrected from 'backspeed' to 'backSpeed'
   backDelay: 1000,
@@ -59,3 +59,13 @@ const BTN1 = document.getElementById('BTN1');
       DIV10.style.opacity = 0;
       DIV10.style.pointerEvents = 'none'; // Disable interactions when form is closed
     });
+
+
+    // resume file download
+    document.querySelector(".unique-button").addEventListener("click", function () {
+      const link = document.createElement("a");
+      link.href = "rahultechresume.pdf";
+      link.download = "rahultechresume.pdf";
+      link.click();
+    });
+    

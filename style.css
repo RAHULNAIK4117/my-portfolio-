@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Black+Ops+One&family=Bokor&family=Cinzel:wght@400..900&family=Concert+One&family=Creepster&family=Domine:wght@400..700&family=Eater&family=Ga+Maamli&family=Homemade+Apple&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Macondo&family=Rowdies:wght@300;400;700&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Black+Ops+One&family=Cinzel:wght@400..900&family=Concert+One&family=Creepster&family=Eater&family=Ga+Maamli&family=Homemade+Apple&family=Lilita+One&family=Macondo&family=Rowdies:wght@300;400;700&family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Black+Ops+One&family=Creepster&family=Ga+Maamli&family=Homemade+Apple&family=Lilita+One&family=Macondo&family=Rowdies:wght@300;400;700&family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Creepster&family=Lilita+One&family=Rowdies:wght@300;400;700&display=swap');
@@ -446,70 +448,42 @@ body{
 }
  
  /* about me more details */
-.about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 1.5rem;
-  background: #081b29;
-  font-family: "Macondo", cursive;
-  font-weight: 400;
+
+ #aboutresume{
+  text-decoration: none;
+ }
+
+/* my service section */
+#myservice .headingservice{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  font-weight:500;
+  font-size: 80px;
   font-style: normal;
+
+}
+#myservice #headingservice1{
+  color: chartreuse;
+  margin-left: 10px;
+}
+@media screen and (max-width: 601px) {
+  #myservice{
+    background: #081b29;
+}
+ 
+
   
 }
-.about .aboutvty{
-  color: red;
-}
-
-
-@media screen and (max-width: 600px) {
-  .about .about-text span {
-    font-size: 40px;
-
-  }
-}
-
-
-.about-img img {
-  padding-bottom: -14%;
-  max-width: 630px;
-  height: auto;
-  width: 53%;
-  border-radius: 8px;
-}
-.about-text h2 {
-  font-size: 60px;
-}
-.about-text h2 span {
-  color: #0ef;
-}
-.about-text h4 {
-  font-size: 29px;
-  font-weight: 600;
-  color: #fff;
-  line-height: 1.7;
-  margin: 15px 0 30px;
-}
-.about-text p {
+#myservice {
   color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
-}
-.unique-button{
-  position: absolute;
-  left: 20px;
-}
-/* my service section */
-
-#myservice{
-  color: aliceblue;
-  font-size: 20px;
-  line-height: 1.4;
-  margin-bottom: 4rem;
-  background: #081b29;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 .sub-title {
+  margin-top: 80px;
   text-align: center;
   font-size: 60px;
   padding-bottom: 70px;
@@ -522,7 +496,7 @@ body{
 }
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -604,13 +578,15 @@ body{
 }
 .heading1 {
   text-align: center;
-  text-decoration: underline;
+
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
   margin-bottom: 50px;
-  font-family: "Eater", serif;
-  font-weight: 400;
+  font-size: 30px;
   font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 /* .radial-bars{
