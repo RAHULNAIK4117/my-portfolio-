@@ -6,13 +6,15 @@
     <title>Naik's Universe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
 </head>
 <body>
   <!-- header of the page -->
-    <nav class="navbar">
+    <nav class="navbar"  >
         <div class="nav">
             <div class="navelement">
                 <img src="./images/myname.png" alt="myname">
@@ -163,108 +165,131 @@
       </div>
       <div>
         <i class='bx bxl-apple' style='color:#00eeff'></i>
-        <h2>web testing</h2>
-        <p>I am passionate about web testing because it ensures quality and reliability in digital solutions. Identifying issues and optimizing performance helps deliver seamless user experiences, making it a critical and rewarding aspect of development.</p>
+        <h2 >web testing</h2>
+        <p id="skills">I am passionate about web testing because it ensures quality and reliability in digital solutions. Identifying issues and optimizing performance helps deliver seamless user experiences, making it a critical and rewarding aspect of development.</p>
       </div>
     </div>
   </div>
 </section>
 <!-- ********************* Part techinical skill ********************* -->
-<section class="skills" id="skill">
-  <div class="container1">
-    <h1 class="heading1" id="headingll">Technical Skills</h1>
-    <div class="Technical-bars">
-      <div class="bar">
-        <i class='bx bxl-html5' style='color:#ff8c00'></i>
-        <div class="info">
-          <span>HTML</span>
-        </div>
-        <div class="progress-line html">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <i class='bx bxl-css3' style='color:hsl(201, 89%, 48%)'></i>
-        <div class="info">
-          <span>CSS</span>
-        </div>
-        <div class="progress-line css">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <i class='bx bxl-javascript' style='color:#fff700'></i>
-        <div class="info">
-          <span>JavaScript</span>
-        </div>
-        <div class="progress-line javascript">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <i class='bx bxl-python' style='color:#00eeff'></i>
-        <div class="info">
-          <span>Python</span>
-        </div>
-        <div class="progress-line python">
-          <span></span>
-        </div>
-      </div>
-      <div class="bar">
-        <i class='bx bxl-react' style='color:#00eeff'></i>
-        <div class="info">
-          <span>React</span>
-        </div>
-        <div class="progress-line react">
-          <span></span>
-        </div>
-      </div>
-    </div>
+<div class="skills-container" >
+  <div class="skills-header">
+      <h1 class="skills-title">Technical Skills</h1>
+      <p class="skills-subtitle">A comprehensive showcase of my technical capabilities across frontend, backend, design, and other essential technologies</p>
   </div>
 
-  <!-- ********************* Part 5 ********************* -->
-  <div class="container">
-    <h1 class="heading1">Professional Skills</h1>
-    <div class="radial-bars">
-      <div class="radial-bar">
-        <svg x="0px" y="0px" viewBox="0 0 200 200">
-          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-          <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-        </svg>
-        <div class="percentage">90%</div>
-        <div class="text">Creativity</div>
+  <div class="skills-grid" >
+      <!-- Frontend Card -->
+      <div class="skills-card" id="frontend-card">
+          <div class="skills-card-header">
+              <div class="skills-card-icon" id="frontend-icon">
+                  <i class="fas fa-code"></i>
+              </div>
+              <h2 class="skills-card-title">Frontend Development</h2>
+          </div>
+          <div class="skills-list">
+              <div class="skill-item"><i class="fab fa-html5 html-icon"></i> HTML5</div>
+              <div class="skill-item"><i class="fab fa-css3-alt css-icon"></i> CSS3</div>
+              <div class="skill-item"><i class="fab fa-js js-icon"></i> JavaScript</div>
+              <div class="skill-item"><i class="fab fa-react react-icon"></i> React.js</div>
+              <div class="skill-item"><i class="fab fa-vuejs vue-icon"></i> Vue.js</div>
+              <div class="skill-item"><i class="fas fa-paint-brush tailwind-icon"></i> Tailwind CSS</div>
+              <div class="skill-item"><i class="fas fa-layer-group mui-icon"></i> Material UI</div>
+              <div class="skill-item"><i class="fas fa-bolt"></i> Vite</div>
+              <div class="skill-item"><i class="fas fa-code-branch redux-icon"></i> Redux</div>
+              <div class="skill-item"><i class="fas fa-project-diagram"></i> Context API</div>
+              <div class="skill-item"><i class="fas fa-server"></i> REST APIs</div>
+              <div class="skill-item"><i class="fas fa-plug"></i> Axios</div>
+          </div>
       </div>
 
-      <div class="radial-bar">
-        <svg x="0px" y="0px" viewBox="0 0 200 200">
-          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-          <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-        </svg>
-        <div class="percentage">65%</div>
-        <div class="text">Communication</div>
+      <!-- Backend Card -->
+      <div class="skills-card" id="backend-card">
+          <div class="skills-card-header">
+              <div class="skills-card-icon" id="backend-icon">
+                  <i class="fas fa-server"></i>
+              </div>
+              <h2 class="skills-card-title">Backend Development</h2>
+          </div>
+          <div class="skills-list">
+              <div class="skill-item"><i class="fab fa-node-js node-icon"></i> Node.js</div>
+              <div class="skill-item"><i class="fas fa-route"></i> Express.js</div>
+              <div class="skill-item"><i class="fab fa-python python-icon"></i> Python</div>
+              <div class="skill-item"><i class="fas fa-database mongo-icon"></i> MongoDB</div>
+              <div class="skill-item"><i class="fas fa-database firebase-icon"></i> Firebase</div>
+              <div class="skill-item"><i class="fas fa-database"></i> Redis</div>
+              <div class="skill-item"><i class="fas fa-flask"></i> Flask</div>
+              <div class="skill-item"><i class="fas fa-code"></i> Django</div>
+              <div class="skill-item"><i class="fas fa-vial"></i> Postman</div>
+          </div>
       </div>
 
-      <div class="radial-bar">
-        <svg x="0px" y="0px" viewBox="0 0 200 200">
-          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-          <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-        </svg>
-        <div class="percentage">75%</div>
-        <div class="text">Problem Solving</div>
+      <!-- Design Card -->
+      <div class="skills-card" id="design-card">
+          <div class="skills-card-header">
+              <div class="skills-card-icon" id="design-icon">
+                  <i class="fas fa-palette"></i>
+              </div>
+              <h2 class="skills-card-title">Design & Tools</h2>
+          </div>
+          <div class="skills-list">
+              <div class="skill-item"><i class="fab fa-figma figma-icon"></i> Figma</div>
+              <div class="skill-item"><i class="fab fa-adobe xd-icon"></i> Adobe XD</div>
+              <div class="skill-item"><i class="fas fa-paint-brush ps-icon"></i> Photoshop</div>
+              <div class="skill-item"><i class="fab fa-canva"></i> Canva</div>
+          </div>
       </div>
 
-      <div class="radial-bar">
-        <svg x="0px" y="0px" viewBox="0 0 200 200">
-          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-          <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-        </svg>
-        <div class="percentage">85%</div>
-        <div class="text">Teamwork</div>
+      <!-- Other Skills Card -->
+      
+
+<!-- Updated Other Skills Card (with Microsoft Office) -->
+<div class="skills-card" id="other-card">
+  <div class="skills-card-header">
+      <div class="skills-card-icon" id="other-icon">
+          <i class="fas fa-tools"></i>
       </div>
-    </div>
+      <h2 class="skills-card-title">Other Skills</h2>
   </div>
-</section>
+  <div class="skills-list">
+      <div class="skill-item"><i class="fab fa-git-alt git-icon"></i> Git</div>
+      <div class="skill-item"><i class="fab fa-github github-icon"></i> GitHub</div>
+      <div class="skill-item"><i class="fab fa-linux linux-icon"></i> Linux</div>
+      <div class="skill-item"><i class="fas fa-rocket"></i> Heroku</div>
+      <div class="skill-item"><i class="fas fa-cloud"></i> Vercel</div>
+      <div class="skill-item"><i class="fas fa-cloud"></i> Netlify</div>
+      <div class="skill-item"><i class="fas fa-vial jest-icon"></i> Jest</div>
+      <div class="skill-item"><i class="fas fa-code-branch"></i> DevOps</div>
+      
+      <!-- Microsoft Office Skills -->
+      <div class="skill-item"><i class="fas fa-file-word" style="color: #2b579a;"></i> Microsoft Word</div>
+      <div class="skill-item"><i class="fas fa-file-excel" style="color: #217346;"></i> Microsoft Excel</div>
+      <div class="skill-item"><i class="fas fa-file-powerpoint" style="color: #d24726;"></i> PowerPoint</div>
+      <div class="skill-item"><i class="fas fa-file-alt" style="color: #737373;"></i> Office 365</div>
+  </div>
+</div>
+<!-- Soft Skills Card -->
+<div class="skills-card" id="softskills-card">
+  <div class="skills-card-header">
+      <div class="skills-card-icon" id="softskills-icon" style="background-color: rgba(234, 88, 12, 0.1); color: #ea580c;">
+          <i class="fas fa-users"></i>
+      </div>
+      <h2 class="skills-card-title">Soft Skills</h2>
+  </div>
+  <div class="skills-list">
+      <div class="skill-item"><i class="fas fa-comments" style="color: #3b82f6;"></i> Communication</div>
+      <div class="skill-item"><i class="fas fa-lightbulb" style="color: #f59e0b;"></i> Problem-solving</div>
+      <div class="skill-item"><i class="fas fa-bug" style="color: #ef4444;"></i> Debugging</div>
+      <div class="skill-item"><i class="fas fa-handshake" style="color: #10b981;"></i> Collaboration</div>
+      <div class="skill-item"><i class="fas fa-brain" style="color: #8b5cf6;"></i> Critical Thinking</div>
+      <div class="skill-item"><i class="fas fa-clock" style="color: #64748b;"></i> Time Management</div>
+      <div class="skill-item"><i class="fas fa-book" style="color: #14b8a6;"></i> Continuous Learning</div>
+  </div>
+</div>
 
+
+  </div>
+</div>
 <!-- lets connect ++++++++++++++++++++++++++++++++++++++++++++++ -->
 <footer class="footer">
   <div class="footer-waves">
@@ -278,11 +303,11 @@
     <div class="footer-section">
       <h3>Let's Connect</h3>
       <div class="social-icons">
-        <a href="#" class="social-icon">
-          <i class='bx bxl-instagram-alt' style='color:#E4405F'></i>
+        <a href="https://www.facebook.com/rahul.naik.540438" class="social-icon">
+          <i class='bx bxl-facebook' style='color:#E4405F'></i>
         </a>
-        <a href="#" class="social-icon">
-          <i class='bx bxl-whatsapp' style='color:#25D366'></i>
+        <a href="https://www.youtube.com/@Beesmartcoder" class="social-icon">
+          <i class='bx bxl-youtube' style='color:#25D366'></i>
         </a>
         <a href="https://www.linkedin.com/in/rahul-naik-656660309/" class="social-icon">
           <i class='bx bxl-linkedin-square' style='color:#0A66C2'></i>
