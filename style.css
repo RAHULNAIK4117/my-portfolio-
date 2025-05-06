@@ -8,6 +8,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Creepster&family=Lilita+One&family=Rowdies:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Black+Ops+One&family=Creepster&family=Ga+Maamli&family=Lilita+One&family=Rowdies:wght@300;400;700&family=Rubik+Mono+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Prata&display=swap');
+
 
 :root {
   --primary: #2563eb;
@@ -1084,7 +1086,108 @@ body{
     margin-left: 8%;
   }
 }
+/* project area++++++++++++++++++++++++++++++++++++++++++ */
 
+
+
+.glass-skills-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.glass-skills-container .glass-card {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+  cursor: pointer;
+  z-index: 1;
+ 
+}
+
+.glass-skills-container{
+  background-color: #432371;
+  
+  
+}
+#projectspeer{
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  
+  
+}
+
+.glass-skills-container:hover .glass-card {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.glass-skills-container .glass-card::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.glass-skills-container .glass-icon {
+  font-size: 2.5em;
+  fill: #fff;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+/* Individual card customizations */
+#github-card {
+  background: linear-gradient(rgba(36, 41, 46, 0.3), transparent);
+}
+
+#code-card {
+  background: linear-gradient(rgba(41, 101, 255, 0.3), transparent);
+}
+
+#earn-card {
+  background: linear-gradient(rgba(46, 204, 113, 0.3), transparent);
+}
+#YOUTUBE-card{
+  background: linear-gradient(rgba(162, 175, 79, 0.3), transparent);
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .glass-skills-container {
+        flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .glass-skills-container .glass-card {
+    margin: 0;
+    transform: rotate(0deg) !important;
+  }
+}
 
 /* form section+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
