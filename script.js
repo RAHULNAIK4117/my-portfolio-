@@ -64,8 +64,8 @@ const BTN1 = document.getElementById('BTN1');
     // resume file download
     document.querySelector(".unique-button").addEventListener("click", function () {
       const link = document.createElement("a");
-      link.href = "rahultechresume.pdf";
-      link.download = "rahultechresume.pdf";
+      link.href = "rahulnaik.pdf";
+      link.download = "rahulnaik.pdf";
       link.click();
     });
     

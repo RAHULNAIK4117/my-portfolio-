@@ -44,6 +44,7 @@ body{
     position: fixed;
     width: 98%;
     padding: 20px;
+    z-index: 100;
 }
 
 .nav img{
@@ -618,6 +619,7 @@ body{
   background: white;
   border-radius: 12px;
   padding: 2rem;
+  z-index: -1;
 
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
   border: 1px solid var(--border);
@@ -1096,6 +1098,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  
 }
 
 .glass-skills-container .glass-card {
