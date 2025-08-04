@@ -507,7 +507,7 @@ body{
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
-  margin-top: -5%;
+  margin-top: -3%;
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 .sub-title {
@@ -801,6 +801,10 @@ body{
       padding: 0.5rem 0.8rem;
       font-size: 0.85rem;
   }
+  #myservice{
+    margin-top: -25%;
+  }
+  
 }
 
 /* Footer Content */
@@ -1316,7 +1320,8 @@ body{
   display: flex; 
   justify-content: center;
    align-items: center; 
-   margin-top: 10%;
+  background: white;
+   
  }
 
 
@@ -1403,6 +1408,13 @@ body{
   font-size: 14px;
   color: #555;
   margin-bottom: 16px;
+}
+.herosectionimage{
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 }
 
 /* Bounce Animation */
