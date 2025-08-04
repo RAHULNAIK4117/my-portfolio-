@@ -30,14 +30,12 @@ html {
 
 body{
   margin:0;
-    padding: 0;
+  padding: 0;
     background-color: #F0F8FF;
 }
-@media (max-width: 768px) {
-  body{
-    margin:0 -7% ;
-  }
-}
+/* @media (max-width: 768px) {
+ 
+} */
 
 .navbar{
     /* background-color:pink; */
@@ -433,6 +431,7 @@ body{
 
 /* HERO SECTION  */
 
+
 .herosection{
   height: 100vh;
   width: 100%;
@@ -468,6 +467,13 @@ body{
  #aboutresume{
   text-decoration: none;
  }
+ .resumebuttonactive{
+  display: flex;
+   justify-content: center;
+   align-items: center; 
+   background: #000;
+   
+  }
 
 /* my service section */
 #myservice .headingservice{
@@ -486,6 +492,11 @@ body{
 @media screen and (max-width: 601px) {
   #myservice{
     background: #081b29;
+    
+}
+#myservice #headingservice1{
+  color: chartreuse;
+  font-size:50px ;
 }
  
 
@@ -496,6 +507,7 @@ body{
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
+  margin-top: -5%;
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 .sub-title {
@@ -1293,3 +1305,118 @@ body{
 
 }
 
+/*coffiee*/
+@media screen and (max-width: 768px){
+  .card-fixed{
+    display: none;
+  }
+  
+}
+.resumebuttonactive{
+  display: flex; 
+  justify-content: center;
+   align-items: center; 
+   margin-top: 10%;
+ }
+
+
+
+.card-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #d0bfff;
+  text-align: center;
+  z-index: 999;
+}
+
+.icon-container {
+  margin-bottom: 10px;
+}
+
+.coffee-icon {
+  font-size: 48px;
+  color: #f59e0b;
+  animation: bounce 1.5s infinite;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7c3aed;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/*lscreen*/
+
+.card-flote{
+  display: none;
+}
+@media (max-width: 480px){
+  
+.card-flote {
+  
+  display: block;
+   text-align: center;
+}
+
+.icon-container {
+  margin-bottom: 10px;
+}
+
+.coffee-icon {
+  font-size: 48px;
+  color: #f59e0b;
+  animation: bounce 1.5s infinite;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7c3aed;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+  }
+
+  .description{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
